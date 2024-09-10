@@ -1,0 +1,90 @@
+body{
+    font-family: sans-serif;
+    background-color: rgb(243, 243, 231);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    padding: 30px;
+    border-radius: 10px;
+}
+label{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+input,textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px dashed;
+
+}
+textarea{
+    height: 120px;
+}
+
+
+nav{
+    display: inline;
+    text-decoration: none;
+    color: black;
+    padding-right: 10px;
+    color: #7e7777;
+}
+
+.card-grid{
+    margin-top:50px;
+    display:grid;
+    grid-auto-columns: auto;
+    grid-template-areas: "a a a ";
+    gap: 20px;
+    width: 1300px;
+}
+.card{
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px  rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+
+}
+.card h2{
+    font-size: 1.5em;
+    margin-bottom:10px;
+}
+.card-content .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;/*velocidade de transição da cor do botão*/
+}
+
+.card-content .btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);/*movimenta o botão em -2px no eixo y*/
+}
+
+.rodape {
+padding: 20px;
+}
+.button-container{
+    display: flex;
+    gap: 10px;
+}
+
+.nav-button{
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.nav-button:hover{
+    background-color: red;
+}
