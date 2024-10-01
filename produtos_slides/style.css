@@ -1,0 +1,133 @@
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+background-color: #f5f5f5;
+}
+
+.container {
+display: flex;
+padding: 20px;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.gallery {
+flex: 1;
+display: flex;
+flex-direction: column;
+}
+
+.thumbnails {
+display: flex;
+justify-content: space-between;
+margin-bottom: 10px;
+}
+
+.thumbnails img {
+width: 80px;
+height: 80px;
+cursor: pointer;
+border: 2px solid transparent;
+}
+
+.thumbnails img:hover {
+border: 2px solid #000;
+}
+
+.main-image {
+position: relative;
+width: 500px;
+height: 300px;
+}
+
+.slides {
+list-style: none;
+display: flex;
+width: 500px;
+height: 300px;
+padding-left: 300px;
+}
+
+.slides li {
+position: absolute;
+opacity: 0;
+transition: opacity 0.5s ease-in-out;
+}
+
+input[type="radio"]:nth-of-type(1):checked ~ .slides li:nth-of-type(1),
+input[type="radio"]:nth-of-type(2):checked ~ .slides li:nth-of-type(2),
+input[type="radio"]:nth-of-type(3):checked ~ .slides li:nth-of-type(3),
+input[type="radio"]:nth-of-type(4):checked ~ .slides li:nth-of-type(4),
+input[type="radio"]:nth-of-type(5):checked ~ .slides li:nth-of-type(5) {
+opacity: 1;
+}
+
+.product-info {
+flex: 1;
+margin-left: 40px;
+padding: 20px;
+background-color: white;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-info h1 {
+font-size: 24px;
+color: #333;
+}
+
+.product-info p {
+margin: 10px 0;
+}
+
+.promo {
+text-decoration: line-through;
+color: rgba(253, 0, 0, 0.616);
+font-size: 14px;
+}
+
+.features {
+list-style-type: none;
+margin: 10px 0;
+padding-left: 0;
+}
+
+.features li {
+margin-bottom: 5px;
+}
+
+button {
+background-color: #000000;
+color: white;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #535353;
+
+}
+
+img:hover{
+background-color: rgba(240, 248, 255, 0);
+opacity: 30%;
+
+}
+
+.tamanho{
+background-color: rgb(255, 255, 255);
+color: #000;
+border: 1px solid #ccc;
+padding: 8px;
+margin-right: 5px;
+cursor: pointer;
+border-radius: 4px;
+}
+.tamanho:hover {
+background-color: #cecece6c;
+}
